@@ -1,16 +1,16 @@
 function cifrar() {
-    let texto = document.getElementById("texto").value;
-    let numDesloc = parseInt(document.getElementById("deslocamento").value);
+   var texto = document.getElementById("texto").value;
+   var numDesloc = parseInt(document.getElementById("deslocamento").value);
 
     document.getElementById("textocifrado").innerHTML = cypherCifrar(texto, numDesloc);
 }
 
 function cypherCifrar(texto, numDesloc) {
-    let textoArray = [];
-    let deslocamentoArray = [];
-    let textoCodificado = "";
+    var textoArray = [];
+    var deslocamentoArray = [];
+    var textoCodificado = "";
 
-    for (let i = 0; i < texto.length; i++) {
+    for (var i = 0; i < texto.length; i++) {
         textoArray.push(texto.charCodeAt(i));
     }
 
@@ -31,18 +31,18 @@ function cypherCifrar(texto, numDesloc) {
 }
 
 function decifrar() {
-    let texto = document.getElementById("texto").value;
-    let numDesloc = parseInt(document.getElementById("deslocamento").value);
+    var texto = document.getElementById("texto").value;
+    var numDesloc = parseInt(document.getElementById("deslocamento").value);
 
     document.getElementById("textocifrado").innerHTML = cypherDec(texto, numDesloc);
 }
 
 function cypherDec(texto, numDesloc) {
-    let textoArray = [];
-    let deslocamentoArray = [];
-    let textoCodificado = "";
+    var textoArray = [];
+    var deslocamentoArray = [];
+    var textoCodificado = "";
 
-    for (let i = 0; i < texto.length; i++) {
+    for (var i = 0; i < texto.length; i++) {
         textoArray.push(texto.charCodeAt(i));
     }
 
